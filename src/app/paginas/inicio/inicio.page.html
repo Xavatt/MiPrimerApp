@@ -1,3 +1,5 @@
+<!--Creamos el componente con "ionic g page paginas/inicio-->
+
 <ion-header>
   <ion-toolbar>
     <ion-title>inicio</ion-title>
@@ -5,10 +7,23 @@
 </ion-header>
 
 <ion-content>
-  <ion-button routerLink = "/alert">
+  
+  <!--Se creo un boton para poder interactuar entre las paginas alert y action-sheet usando la funcion 'routerLink'-->
+  <ion-button expand="full" routerLink = "/alert">
     Alert
   </ion-button>
-  <ion-button routerLink = "/action-sheet">
+  <ion-button expand="full" routerLink = "/action-sheet">
     Action sheet
   </ion-button>
+  
+  <!--detail sirve para poner una flechita para indicar que se puede mover de pagina, slot para hacer un espacio-->
+  <ion-list>
+    <ion-item *ngFor="let l of lista" 
+      [routerLink] = "l.redirectTo" detail>
+      <ion-icon slot="start" [name]="l.icon"></ion-icon>
+      <ion-label>{{l.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+
 </ion-content>

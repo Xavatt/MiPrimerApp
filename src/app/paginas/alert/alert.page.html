@@ -1,14 +1,40 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>alert</ion-title>
-  </ion-toolbar>
-</ion-header>
+<!--Creamos el componente con "ionic g page paginas/alert-->
+
+<app-encabezado titulo= "alert page"></app-encabezado>
+
+
 
 <ion-content>
-  <ion-button routerLink = "/inicio">
-    Inicio
-  </ion-button>
-  <ion-button routerLink = "/action-sheet">
-    Action sheet
-  </ion-button>
+  <!--Alert Message-->
+  <ion-button expand="full" (click) = "presentAlert()">Alert Message</ion-button>
+  
+  <br>
+
+  <!--Alert MultipleButtons-->
+  <ion-button expand="full" (click) = "presentAlertMultipleButtons()">Alert MultipleButtons</ion-button>
+
+  <br>
+
+  <!--Alert Confirm-->
+  <ion-button expand="full" (click) = "presentAlertConfirm()">Alert Confirm</ion-button>
+
+  <br>
+
+  <!--Alert Propmt-->
+  <ion-button expand="full" expand="full" (click) = "presentAlertPrompt()">Alert Propmt</ion-button>
+
+
+ 
+
+  <br>
+
+  <!--Alert Radio-->
+  <ion-button expand="full" expand="full" (click) = "presentAlertRadio()">Alert Radio</ion-button>
+
+  <br>
+
+  <!--Alert CheckBox-->
+  <ion-button expand="full" (click) = "presentAlertCheckbox()">Alert CheckBox</ion-button>
+
+
 </ion-content>

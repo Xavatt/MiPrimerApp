@@ -1,14 +1,11 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>action-sheet</ion-title>
-  </ion-toolbar>
-</ion-header>
+<!--Creamos el componente con "ionic g page paginas/action-sheet-->
+
+<app-encabezado titulo="action-sheet page"></app-encabezado>
+
+
 
 <ion-content>
-  <ion-button routerLink = "/inicio">
-    Inicio
-  </ion-button>
-  <ion-button routerLink = "/alert">
-    Alert
-  </ion-button>
+  
+  <ion-button expand="full" (click) = "presentActionSheet()">Show Action Sheet</ion-button>
+
 </ion-content>

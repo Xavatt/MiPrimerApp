@@ -1,0 +1,14 @@
+<!--Se agrego ComponentesModule en [app.module, alert.module, action-sheet.module]
+    Y tambien poner EncabezadoComponent en Declaration en componentes.module
+-->
+
+<ion-header>
+  <ion-toolbar>
+     <!--Se agrego ion buttons para agregar la fleca para regresar, back button defaultHref te manda a la pagina inicio-->
+     <ion-buttons slot="start">
+      <ion-back-button text = "Regresar" defaultHref ="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{titulo}}</ion-title>
+    <!--<ion-title>{{titulo | uppercase}}</ion-title>-->
+  </ion-toolbar>
+</ion-header>

@@ -13,8 +13,6 @@ import { AlertController } from '@ionic/angular';
 export class AlertPage implements OnInit {
 
   // Declaracion de variabes
-  nombre: string;
-
   nom: string;
   edad: string;
   gen: string;
@@ -112,9 +110,6 @@ export class AlertPage implements OnInit {
       ]
     });
    
-
-
-
     await alert.present();
   }
 

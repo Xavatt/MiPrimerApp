@@ -10,31 +10,38 @@
   
   <br>
 
-  <!--Alert MultipleButtons-->
+  <!--Alert MultipleButtons
   <ion-button expand="full" (click) = "presentAlertMultipleButtons()">Alert MultipleButtons</ion-button>
 
   <br>
 
-  <!--Alert Confirm-->
+  Alert Confirm
   <ion-button expand="full" (click) = "presentAlertConfirm()">Alert Confirm</ion-button>
 
   <br>
 
-  <!--Alert Propmt-->
+  Alert Propmt-->
   <ion-button expand="full" expand="full" (click) = "presentAlertPrompt()">Alert Propmt</ion-button>
 
+  <ion-list>
+    <ion-item *ngFor = "let a of listado">
+      <ion-avatar slot="start">
+        <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png">
+      </ion-avatar>      
+      <ion-label> {{a.nom}}, {{a.edad}}, {{a.gen}}</ion-label>
+    </ion-item>
+  </ion-list>
 
- 
 
-  <br>
+   
 
-  <!--Alert Radio-->
+  <!--Alert Radio-
   <ion-button expand="full" expand="full" (click) = "presentAlertRadio()">Alert Radio</ion-button>
 
   <br>
 
-  <!--Alert CheckBox-->
+  Alert CheckBox
   <ion-button expand="full" (click) = "presentAlertCheckbox()">Alert CheckBox</ion-button>
-
+-->
 
 </ion-content>

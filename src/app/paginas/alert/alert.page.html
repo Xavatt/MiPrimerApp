@@ -24,10 +24,12 @@
   <ion-button expand="full" expand="full" (click) = "presentAlertPrompt()">Alert Propmt</ion-button>
 
   <ion-list>
-    <ion-item>      
-      <ion-label>{{nombre}}</ion-label>
+    <ion-item *ngFor = "let a of listado">      
+      <ion-label>Nom: {{a.nom}} Edad:{{a.edad}} Gen:{{a.gen}}</ion-label>
     </ion-item>
   </ion-list>
+
+
    
 
   <!--Alert Radio-

@@ -2,17 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
 
-
-
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.page.html',
   styleUrls: ['./alert.page.scss'],
 })
+
+
+
 export class AlertPage implements OnInit {
 
   // Declaracion de variabes
   nombre: string;
+
+  nom: string;
+  edad: string;
+  gen: string;
 
 
   constructor(public alertController: AlertController) { }
@@ -98,14 +103,31 @@ export class AlertPage implements OnInit {
           text: 'Ok',
           handler: (datos) => {
             console.log('Confirm Ok',datos);
-            this.nombre = datos.txtNombre;
+            this.nom = datos.txtNombre;
+            this.edad = datos.txtEdad;
+            this.gen = datos.txtGenero;
+            this.informacion();
           }
         }
       ]
     });
+   
+
+
 
     await alert.present();
   }
+
+  informacion()
+  {
+    this.listado.push({nom: this.nom, edad: this.edad, gen: this.gen})
+    console.log(this.listado);
+
+    this.listado.forEach((reg) => console.log("Nombre: " + reg.nom + " Edad: " +reg.edad + " Genero: " + reg.gen ));
+  }
+
+  persona: Personas[] = [];
+  listado:  Array<Personas> = this.persona;
 
   async presentAlertRadio() {
     const alert = await this.alertController.create({
@@ -239,4 +261,12 @@ export class AlertPage implements OnInit {
   ngOnInit() {
   }
 
+
+}
+
+interface Personas
+{
+  nom: string;
+  edad: string;
+  gen: string;
 }

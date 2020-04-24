@@ -11,7 +11,9 @@ import { AlertController } from '@ionic/angular';
 })
 export class AlertPage implements OnInit {
 
-  
+  // Declaracion de variabes
+  nombre: string;
+
 
   constructor(public alertController: AlertController) { }
 
@@ -75,7 +77,7 @@ export class AlertPage implements OnInit {
         },
         {
           name: 'txtEdad',
-          type: 'number',                    
+          type: 'text',                    
           placeholder: 'Dame tu edad'
         },
         {
@@ -94,8 +96,9 @@ export class AlertPage implements OnInit {
           }
         }, {
           text: 'Ok',
-          handler: (nombre) => {
-            console.log('Confirm Ok',nombre);
+          handler: (datos) => {
+            console.log('Confirm Ok',datos);
+            this.nombre = datos.txtNombre;
           }
         }
       ]

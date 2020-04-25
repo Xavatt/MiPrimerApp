@@ -1,19 +1,22 @@
 <app-encabezado titulo="avatar page"></app-encabezado>
 
 <ion-content>
+  
+  <!--*ngIf = "conteoPerros>=0"-->
+  <ion-button (click)="presentAlertPrompt()" color="danger">Agregar Perrito</ion-button>
 
-
-  <ion-list>
-    <ion-item *ngFor = "let item of [1,2]">
+  <ion-list *ngFor = "let p of listaPerro">
+    <ion-item *ngFor = "let pr of listadoPerro" >
       <ion-chip>
         <ion-avatar>
-          <img src="/assets/perrito.png">
-        </ion-avatar>
-        <ion-label>Avatar Perro</ion-label>
+          <img [src]="p.icon">
+        </ion-avatar>        
+        <ion-label>{{pr.nombre}}</ion-label>
       </ion-chip>
     </ion-item>
   </ion-list>
 
+  
   
   <ion-list>
     <ion-item *ngFor = "let item of [1,2]">

@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'avatar',
     loadChildren: () => import('./paginas/avatar/avatar.module').then( m => m.AvatarPageModule)
   },
+  {
+    path: 'botones',
+    loadChildren: () => import('./proyecto/botones/botones.module').then( m => m.BotonesPageModule)
+  },
 ];
 
 @NgModule({

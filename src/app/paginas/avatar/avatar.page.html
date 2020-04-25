@@ -1,0 +1,38 @@
+<app-encabezado titulo="avatar page"></app-encabezado>
+
+<ion-content>
+  
+  <!--*ngIf = "conteoPerros>=0"-->
+  <ion-button (click)="PromptPerro()"  color="danger">Agregar Perrito</ion-button>
+
+
+
+  <ion-list *ngFor = "let p of listaPerro">
+    <ion-item *ngFor = "let pr of listadoPerro" >
+      <ion-chip>
+        <ion-avatar>
+          <img [src]="p.icon">
+        </ion-avatar>        
+        <ion-label>{{pr.nombreP}}</ion-label>
+      </ion-chip>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="PromptGato()"  color="success">Agregar Gatito</ion-button>
+
+  <ion-list *ngFor = "let g of listaGato">
+    <ion-item *ngFor = "let gr of listadoGato" >
+      <ion-chip>
+        <ion-avatar>
+          <img [src]="g.icon">
+        </ion-avatar>        
+        <ion-label>{{gr.nombreG}}</ion-label>
+      </ion-chip>
+    </ion-item>
+  </ion-list>
+  
+  
+
+
+
+</ion-content>

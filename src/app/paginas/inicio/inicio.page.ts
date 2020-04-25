@@ -38,6 +38,11 @@ export class InicioPage implements OnInit {
       name: 'Card',
       icon: 'document-text-outline',
       redirectTo: '/card',
+    },
+    {
+      name: 'CheckBox',
+      icon: 'checkmark-outline',
+      redirectTo: '/checkbox',
     }
   ];
 

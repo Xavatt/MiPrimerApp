@@ -33,6 +33,11 @@ export class InicioPage implements OnInit {
       name: 'Botones',
       icon: 'cube-outline',
       redirectTo: '/botones',
+    },
+    {
+      name: 'Card',
+      icon: 'document-text-outline',
+      redirectTo: '/card',
     }
   ];
 
@@ -42,3 +47,4 @@ export class InicioPage implements OnInit {
   }
 
 }
+

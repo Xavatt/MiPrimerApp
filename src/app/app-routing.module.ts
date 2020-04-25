@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'card',
     loadChildren: () => import('./proyecto/card/card.module').then( m => m.CardPageModule)
   },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./proyecto/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
 ];
 
 @NgModule({

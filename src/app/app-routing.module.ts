@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'checkbox',
     loadChildren: () => import('./proyecto/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
   },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./proyecto/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
 ];
 
 @NgModule({

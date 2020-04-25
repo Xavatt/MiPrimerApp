@@ -28,6 +28,16 @@ export class InicioPage implements OnInit {
       name: 'Avatar',
       icon: 'body-outline',
       redirectTo: '/avatar',
+    },
+    {
+      name: 'Botones',
+      icon: 'cube-outline',
+      redirectTo: '/botones',
+    },
+    {
+      name: 'Card',
+      icon: 'document-text-outline',
+      redirectTo: '/card',
     }
   ];
 
@@ -37,3 +47,4 @@ export class InicioPage implements OnInit {
   }
 
 }
+

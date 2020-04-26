@@ -1,0 +1,28 @@
+<app-encabezado titulo="datetime page"></app-encabezado>
+
+<ion-content>
+
+<ion-list>
+
+  <ion-list-header>
+    <ion-label>Fechas</ion-label>
+  </ion-list-header>
+  
+
+  <ion-item>
+    <ion-label>Fecha de Nacimiento</ion-label>
+    <ion-datetime placeholder="fecha de hoy" value = "{{ fecha | date: 'yyyy-MM-dd' }}" display-format = "YYYY MMMM DD" ></ion-datetime>
+  </ion-item>
+
+  <ion-list-header>
+    <ion-label>Restricciones</ion-label>
+  </ion-list-header>
+
+  <ion-item>
+    <ion-label>Min y Max</ion-label>
+    <ion-datetime placeholder="yyyy-mm-dd" display-format = "YYYY MMMM DD" min="1997-01-01" max="2019-12-31" ></ion-datetime>
+  </ion-item>
+
+</ion-list>
+
+</ion-content>

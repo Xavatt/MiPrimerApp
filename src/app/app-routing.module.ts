@@ -27,6 +27,22 @@ const routes: Routes = [
     path: 'card',
     loadChildren: () => import('./proyecto/card/card.module').then( m => m.CardPageModule)
   },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./proyecto/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./proyecto/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
+  {
+    path: 'fab',
+    loadChildren: () => import('./proyecto/fab/fab.module').then( m => m.FabPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./proyecto/grid/grid.module').then( m => m.GridPageModule)
+  },
 ];
 
 @NgModule({

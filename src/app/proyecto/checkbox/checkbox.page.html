@@ -1,0 +1,13 @@
+<app-encabezado titulo="checkbox page"></app-encabezado>
+
+<ion-content>
+
+  <ion-list *ngFor="let check of lista" (click)="revision(check)">
+    <ion-item >
+      <ion-label>{{check.val}}</ion-label>
+      <ion-checkbox [id] = "check.id" [color]="check.col" slot="end" [(ngModel)] = "check.checked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

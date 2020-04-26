@@ -53,6 +53,11 @@ export class InicioPage implements OnInit {
       name: 'Fab',
       icon: 'ellipsis-vertical-circle-outline',
       redirectTo: '/fab',
+    },
+    {
+      name: 'Grid',
+      icon: 'grid-outline',
+      redirectTo: '/grid',
     }
   ];
 

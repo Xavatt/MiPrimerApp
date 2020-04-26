@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'fab',
     loadChildren: () => import('./proyecto/fab/fab.module').then( m => m.FabPageModule)
   },
+  {
+    path: 'grid',
+    loadChildren: () => import('./proyecto/grid/grid.module').then( m => m.GridPageModule)
+  },
 ];
 
 @NgModule({

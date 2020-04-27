@@ -34,6 +34,12 @@ lista: revisionLista[] = [
     val: 'Jorge',
     checked: false,
     col: 'dark'
+  },
+  {
+    id: 3,
+    val: 'Zaira',
+    checked: true,
+    col: 'light'
   }
 ]
 

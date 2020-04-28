@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { ListaComponentes } from 'src/app/interfaces/interfaces';
+import { DataService } from 'src/app/services/data.service';
+import { Observable } from 'rxjs';
 
-interface ListaComponentes{
-  name: string;
-  icon: string;
-  redirectTo: string;
-}
+
 
 @Component({
   selector: 'app-inicio',
@@ -13,8 +13,26 @@ interface ListaComponentes{
 })
 export class InicioPage implements OnInit {
 
-  lista: ListaComponentes[] = [
-    {
+  lista: Observable<ListaComponentes[]>;
+
+ 
+
+  constructor( private menuCtrl: MenuController, 
+               private dataService: DataService) { }
+
+  ngOnInit() {
+
+    this.lista  = this.dataService.getMenu();
+  }
+
+  toggleMenu()
+  {
+    this.menuCtrl.toggle();
+  }
+
+}
+
+/* {
       name: 'Action Sheet',
       icon: 'alert-circle-outline',
       redirectTo: '/action-sheet',
@@ -73,15 +91,4 @@ export class InicioPage implements OnInit {
       name: 'Sliding',
       icon: 'albums-outline',
       redirectTo: '/sliding',
-    }
-  ];
-
- 
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
+    } */

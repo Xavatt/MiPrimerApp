@@ -2,6 +2,18 @@
 
 <ion-header>
   <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <!-- Manera "Dificl"
+      <ion-button (click) = "toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+-->
+<!--Manera sencilla ion menu button hace todo lo de arriba-->
+     <ion-menu-button color="success" name="primerMenu"></ion-menu-button>
+
+    </ion-buttons>
+
     <ion-title>inicio</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -18,7 +30,7 @@
   -->
   <!--detail sirve para poner una flechita para indicar que se puede mover de pagina, slot para hacer un espacio-->
   <ion-list>
-    <ion-item *ngFor="let l of lista" 
+    <ion-item *ngFor="let l of lista | async" 
       [routerLink] = "l.redirectTo" detail>
       <ion-icon slot="start" [name]="l.icon"></ion-icon>
       <ion-label>{{l.name}}</ion-label>

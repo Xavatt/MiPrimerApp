@@ -54,7 +54,7 @@ const routes: Routes = [
   {
     path: 'sliding',
     loadChildren: () => import('./proyecto/sliding/sliding.module').then( m => m.SlidingPageModule)
-  },
+  }
 ];
 
 @NgModule({

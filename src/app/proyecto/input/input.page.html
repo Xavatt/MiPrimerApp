@@ -2,4 +2,51 @@
 
 <ion-content>
 
+
+  <ion-list>
+
+    <ion-list-header>
+      <ion-label>Nombre: {{ nombre || 'No ha ingresado nombre '}} </ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label position = "floating"> Nombre: </ion-label>
+        <ion-input  type = "text" 
+                    [(ngModel)] = "nombre" ></ion-input>      
+    </ion-item>
+  </ion-list>
+
+  <form #formulario="ngForm" (ngSubmit) = "Submit()" >
+
+    <ion-list>
+
+      <ion-list-header>
+        <ion-label>Email: {{ formulario.valid }} </ion-label>
+      </ion-list-header>
+
+
+      <ion-item>
+        <ion-label position = "floating"> Email: </ion-label>
+        <ion-input  type = "email" name="email"
+                    [(ngModel)] = "usuario.email"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                    required></ion-input>      
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position = "floating"> Password: </ion-label>
+        <ion-input  type = "password" name="usuario.password"
+                    [(ngModel)] = "usuario.password"                    
+                    required></ion-input>      
+      </ion-item>
+    </ion-list>
+
+    <ion-button type="submit" [disabled] = "formulario.invalid" expand="block" shape="round">
+      Click me
+    </ion-button>
+
+  </form>
+
 </ion-content>
+

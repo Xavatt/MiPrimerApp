@@ -68,6 +68,11 @@ export class InicioPage implements OnInit {
       name: 'Input',
       icon: 'cloud-upload-outline',
       redirectTo: '/input',
+    },
+    {
+      name: 'Sliding',
+      icon: 'albums-outline',
+      redirectTo: '/sliding',
     }
   ];
 

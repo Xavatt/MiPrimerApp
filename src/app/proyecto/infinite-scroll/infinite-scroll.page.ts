@@ -9,7 +9,7 @@ import { IonInfiniteScroll } from '@ionic/angular';
   styleUrls: ['./infinite-scroll.page.scss'],
 })
 export class InfiniteScrollPage implements OnInit {
-//@ViewChild(IonInfiniteScroll) infiniteScroll: IonInfiniteScroll;
+@ViewChild(IonInfiniteScroll, {static: true}) infiniteScroll: IonInfiniteScroll;
 
 dato: any[] = Array(20);
 
@@ -20,12 +20,12 @@ dato: any[] = Array(20);
     console.log('Cargando los demas elementos');
     setTimeout(() => {
 
-    //  if(this.dato.length > 50)
-     // {
-      //  event.target.complete();
-      //  this.infiniteScroll.disabled = true;
-      // return;
-     // }
+    if(this.dato.length > 50)
+    {
+      event.target.complete();
+      this.infiniteScroll.disabled = true;
+      return;
+    }
 
       console.log('Done');
       const listado = Array(20);

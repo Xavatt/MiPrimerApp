@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./proyecto/input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'sliding',
+    loadChildren: () => import('./proyecto/sliding/sliding.module').then( m => m.SlidingPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,44 @@
+<app-encabezado titulo="sliding page"></app-encabezado>
+
+<ion-content>
+
+  <ion-list #lista>
+    <ion-item-sliding *ngFor = "let us of usuarios | async">
+
+      <ion-item >
+        <ion-label>
+    
+          <h3>{{us.name}}</h3>
+    
+          <p>{{us.email}}</p>
+        </ion-label>
+          <ion-label slot="end">
+            {{us.phone}}
+          </ion-label>
+        
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option (click)="favorite(us)">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option color="success" (click)="share(us)">
+          <ion-icon slot="icon-only" name="share"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    
+      <ion-item-options side="end">
+        <ion-item-option color ="danger" (click)="deleted(us)">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    
+      
+    </ion-item-sliding>
+
+
+  </ion-list>
+
+
+</ion-content>

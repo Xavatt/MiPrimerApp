@@ -62,6 +62,14 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./proyecto/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'loading',
+    loadChildren: () => import('./proyecto/loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./proyecto/popover/popover.module').then( m => m.PopoverPageModule)
   }
 ];
 

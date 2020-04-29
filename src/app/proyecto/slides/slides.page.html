@@ -1,5 +1,38 @@
-<app-encabezado titulo="slide page"></app-encabezado>
+
+<ion-header no-border>
+  <ion-toolbar>
+    <img src="/assets/wolf3.png" class="avatar animeted fadeIn">
+  </ion-toolbar>
+</ion-header>
+
 
 <ion-content>
+
+  <ion-slides pager="true" class="slide-full">
+
+    <ion-slide *ngFor="let sl of slides">
+
+      <ion-card mode=ios>
+
+        <img [src] = "sl.img" class="slide-image">
+
+        <ion-card-header>
+          <ion-card-title> {{sl.titulo}} </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{sl.desc}}
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+      <ion-button expand="full" color="success" fill="clear" (click)="onClick()"> Home! </ion-button>
+    </ion-slide>
+
+
+  </ion-slides>
+
 
 </ion-content>

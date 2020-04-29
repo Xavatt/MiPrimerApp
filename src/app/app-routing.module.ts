@@ -58,6 +58,10 @@ const routes: Routes = [
   {
     path: 'slides',
     loadChildren: () => import('./proyecto/slides/slides.module').then( m => m.SlidesPageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./proyecto/tabs/tabs.module').then( m => m.TabsPageModule)
   }
 ];
 

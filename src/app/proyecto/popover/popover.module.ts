@@ -8,8 +8,12 @@ import { PopoverPageRoutingModule } from './popover-routing.module';
 
 import { PopoverPage } from './popover.page';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
+import { PopoverinfoComponent } from 'src/app/componentes/popoverinfo/popoverinfo.component';
 
 @NgModule({
+  entryComponents: [
+    PopoverinfoComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,

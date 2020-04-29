@@ -13,6 +13,9 @@ import { Observable } from 'rxjs';
 })
 export class InicioPage implements OnInit {
 
+  // la variable lista esta siendo usada como Observable en donde se esta mandando llamar el arreglo ListaComponentes[]
+  // Y esta siendo llamada de la carpeta de assets/data/menu.json
+
   lista: Observable<ListaComponentes[]>;
 
  

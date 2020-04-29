@@ -5,7 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 
-
+// Se agrego el modulo RouterModule para que pueda funcionar el routerLink
 
 @NgModule({
   declarations: [

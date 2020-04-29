@@ -73,6 +73,11 @@
       "name": "Loading",
       "icon": "reload-outline",
       "redirectTo": "/loading"
+    },
+    {
+      "name": "PopOver",
+      "icon": "bug-outline",
+      "redirectTo": "/popover"
     }
   ]
   

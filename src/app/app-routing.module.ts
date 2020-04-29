@@ -66,6 +66,10 @@ const routes: Routes = [
   {
     path: 'loading',
     loadChildren: () => import('./proyecto/loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./proyecto/popover/popover.module').then( m => m.PopoverPageModule)
   }
 ];
 

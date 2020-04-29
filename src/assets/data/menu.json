@@ -63,6 +63,11 @@
       "name": "Slides",
       "icon": "hammer",
       "redirectTo": "/slides"
+    },
+    {
+      "name": "Tabs",
+      "icon": "finger-print-outline",
+      "redirectTo": "/tabs"
     }
   ]
   

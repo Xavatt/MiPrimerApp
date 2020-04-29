@@ -58,6 +58,11 @@
       "name": "Sliding",
       "icon": "albums-outline",
       "redirectTo": "/sliding"
+    },
+    {
+      "name": "Slides",
+      "icon": "hammer",
+      "redirectTo": "/slides"
     }
   ]
   

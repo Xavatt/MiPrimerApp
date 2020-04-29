@@ -43,6 +43,22 @@ const routes: Routes = [
     path: 'grid',
     loadChildren: () => import('./proyecto/grid/grid.module').then( m => m.GridPageModule)
   },
+  {
+    path: 'infinite-scroll',
+    loadChildren: () => import('./proyecto/infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./proyecto/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'sliding',
+    loadChildren: () => import('./proyecto/sliding/sliding.module').then( m => m.SlidingPageModule)
+  },
+  {
+    path: 'slides',
+    loadChildren: () => import('./proyecto/slides/slides.module').then( m => m.SlidesPageModule)
+  }
 ];
 
 @NgModule({

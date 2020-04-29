@@ -2,19 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { IonicModule } from '@ionic/angular';
+import { MenuComponent } from './menu/menu.component';
+import { RouterModule } from '@angular/router';
 
-
+// Se agrego el modulo RouterModule para que pueda funcionar el routerLink
 
 @NgModule({
   declarations: [
-    EncabezadoComponent
+    EncabezadoComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
-    IonicModule    
+    IonicModule,
+    RouterModule    
   ],
   exports: [
-    EncabezadoComponent
+    EncabezadoComponent,
+    MenuComponent
   ]
 })
 export class ComponentesModule { }

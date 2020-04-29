@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { ListaComponentes } from 'src/app/interfaces/interfaces';
+import { DataService } from 'src/app/services/data.service';
+import { Observable } from 'rxjs';
 
-interface ListaComponentes{
-  name: string;
-  icon: string;
-  redirectTo: string;
-}
+
 
 @Component({
   selector: 'app-inicio',
@@ -13,8 +13,29 @@ interface ListaComponentes{
 })
 export class InicioPage implements OnInit {
 
-  lista: ListaComponentes[] = [
-    {
+  // la variable lista esta siendo usada como Observable en donde se esta mandando llamar el arreglo ListaComponentes[]
+  // Y esta siendo llamada de la carpeta de assets/data/menu.json
+
+  lista: Observable<ListaComponentes[]>;
+
+ 
+
+  constructor( private menuCtrl: MenuController, 
+               private dataService: DataService) { }
+
+  ngOnInit() {
+
+    this.lista  = this.dataService.getMenu();
+  }
+
+  toggleMenu()
+  {
+    this.menuCtrl.toggle();
+  }
+
+}
+
+/* {
       name: 'Action Sheet',
       icon: 'alert-circle-outline',
       redirectTo: '/action-sheet',
@@ -58,13 +79,19 @@ export class InicioPage implements OnInit {
       name: 'Grid',
       icon: 'grid-outline',
       redirectTo: '/grid',
-    }
-  ];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
+    },
+    {
+      name: 'Infinite Scroll',
+      icon: 'flame-outline',
+      redirectTo: '/infinite-scroll',
+    },
+    {
+      name: 'Input',
+      icon: 'cloud-upload-outline',
+      redirectTo: '/input',
+    },
+    {
+      name: 'Sliding',
+      icon: 'albums-outline',
+      redirectTo: '/sliding',
+    } */

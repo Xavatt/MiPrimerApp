@@ -78,6 +78,11 @@
       "name": "PopOver",
       "icon": "bug-outline",
       "redirectTo": "/popover"
+    },
+    {
+      "name": "Reorder",
+      "icon": "barcode-outline",
+      "redirectTo": "/reorder"
     }
   ]
   

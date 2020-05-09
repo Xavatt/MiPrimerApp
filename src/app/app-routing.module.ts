@@ -70,6 +70,10 @@ const routes: Routes = [
   {
     path: 'popover',
     loadChildren: () => import('./proyecto/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'reorder',
+    loadChildren: () => import('./proyecto/reorder/reorder.module').then( m => m.ReorderPageModule)
   }
 ];
 

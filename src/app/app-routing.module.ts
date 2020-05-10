@@ -70,6 +70,18 @@ const routes: Routes = [
   {
     path: 'popover',
     loadChildren: () => import('./proyecto/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'reorder',
+    loadChildren: () => import('./proyecto/reorder/reorder.module').then( m => m.ReorderPageModule)
+  },
+  {
+    path: 'serch',
+    loadChildren: () => import('./proyecto/serch/serch.module').then( m => m.SerchPageModule)
+  },
+  {
+    path: 'segment',
+    loadChildren: () => import('./proyecto/segment/segment.module').then( m => m.SegmentPageModule)
   }
 ];
 

@@ -78,6 +78,21 @@
       "name": "PopOver",
       "icon": "bug-outline",
       "redirectTo": "/popover"
+    },
+    {
+      "name": "Reorder",
+      "icon": "barcode-outline",
+      "redirectTo": "/reorder"
+    },
+    {
+      "name": "Serch",
+      "icon": "compass-outline",
+      "redirectTo": "/serch"
+    },
+    {
+      "name": "Segment",
+      "icon": "tv-outline",
+      "redirectTo": "/segment"
     }
   ]
   

@@ -1,0 +1,21 @@
+<app-encabezado titulo="reorder page"></app-encabezado>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-reorder-group [disabled]= "false" (ionItemReorder)="reorder($event)">
+
+      <ion-item *ngFor = "let per of personajes">
+        <ion-label> {{per}} </ion-label>        
+          <ion-reorder slot="end"></ion-reorder>        
+      </ion-item>
+
+    </ion-reorder-group>
+
+  </ion-list>
+  <ion-button (click) = "onClick()">
+    Guardar
+  </ion-button>
+
+</ion-content>

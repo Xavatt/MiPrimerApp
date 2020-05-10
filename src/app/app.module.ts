@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ComponentesModule } from './componentes/componentes.module';
 
 import { HttpClientModule } from '@angular/common/http';
+import { PipesModule } from './pipes/pipes.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     IonicModule.forRoot(), 
     AppRoutingModule, 
     ComponentesModule,
-    HttpClientModule
+    HttpClientModule,
+    PipesModule
   ],
   providers: [
     StatusBar,

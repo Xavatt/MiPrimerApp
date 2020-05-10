@@ -88,6 +88,11 @@
       "name": "Serch",
       "icon": "compass-outline",
       "redirectTo": "/serch"
+    },
+    {
+      "name": "Segment",
+      "icon": "tv-outline",
+      "redirectTo": "/segment"
     }
   ]
   

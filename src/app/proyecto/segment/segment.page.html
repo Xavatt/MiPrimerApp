@@ -1,0 +1,45 @@
+<app-encabezado titulo="segment page"></app-encabezado>
+
+
+
+<ion-toolbar color="light" >
+
+  <ion-segment  (ionChange)="segmentChanged($event)"
+                >
+
+    <ion-segment-button value="todos" >
+      <ion-label color="danger" >Todos</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="fame">
+      <ion-label color="tertiary" >Hall of Fame</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="scoring">
+      <ion-label color="success" >Best Points</ion-label>
+    </ion-segment-button>
+
+  </ion-segment>
+
+</ion-toolbar>
+
+<ion-content>
+
+<ion-list>
+
+  <ion-item *ngFor ="let ba of (basquet | async) | filtro: classification: 'classification'">
+    <ion-label>
+       <h3>{{ ba.name }}, <small> {{ba.year}} {{ba.points}} </small> </h3>
+       <p>{{ba.team}}</p>                  
+      </ion-label>
+      <ion-label>
+        <p align="right"> {{ba.classification}}  </p>  
+      </ion-label>
+         
+  </ion-item>
+
+</ion-list>
+
+
+
+</ion-content>

@@ -78,6 +78,10 @@ const routes: Routes = [
   {
     path: 'serch',
     loadChildren: () => import('./proyecto/serch/serch.module').then( m => m.SerchPageModule)
+  },
+  {
+    path: 'segment',
+    loadChildren: () => import('./proyecto/segment/segment.module').then( m => m.SegmentPageModule)
   }
 ];
 

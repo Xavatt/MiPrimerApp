@@ -1,0 +1,122 @@
+[
+    {
+        "name":"Michael Jordan", 
+        "team":"Chicago Bulls",
+        "classification": "Hall of Fame",
+        "year":"2009"        
+    },
+    {
+        "name":"David Robinson", 
+        "team":"Spurs",
+        "classification": "Hall of Fame", 
+        "year":"2009"        
+    },
+    {
+        "name":"John Stockton", 
+        "team":"Utah Jazz",
+        "classification": "Hall of Fame", 
+        "year":"2009"        
+    },
+    {
+        "name":"Dennis Johnson", 
+        "team":"Phoenix Suns",
+        "classification": "Hall of Fame", 
+        "year":"2010"        
+    },
+    {
+        "name":"Gus Johnson", 
+        "team":"Washington Wizards",
+        "classification": "Hall of Fame", 
+        "year":"2010"        
+    },
+    {
+        "name":"Karl Malone", 
+        "team":"Utah Jazz",
+        "classification": "Hall of Fame", 
+        "year":"2010"        
+    },
+    {
+        "name":"Scottie Pippen", 
+        "team":"Chicago Bulls",
+        "classification": "Hall of Fame", 
+        "year":"2010"        
+    },
+    {
+        "name":"Artis Gilmore", 
+        "team":"Chicago Bulls",
+        "classification": "Hall of Fame", 
+        "year":"2011"        
+    },
+    {
+        "name":"Chris Mullin", 
+        "team":"Golden State Warriors",
+        "classification": "Hall of Fame", 
+        "year":"2011"        
+    },
+    {
+        "name":"Arvydas Sabonis", 
+        "team":"Blazers",
+        "classification": "Hall of Fame", 
+        "year":"2011"        
+    },
+    {
+        "name":"Kareem Abdul", 
+        "team":"Lakers",
+        "classification": "Scoring Leaders", 
+        "points":"38,387"        
+    },
+    {
+        "name":"Karl Malone", 
+        "team":"Lakers",
+        "classification": "Scoring Leaders", 
+        "points":"36,928"        
+    },
+    {
+        "name":"Lebron James", 
+        "team":"Lakers",
+        "classification": "Scoring Leaders", 
+        "points":"34,087"        
+    },
+    {
+        "name":"Kobe Bryant", 
+        "team":"Lakers",
+        "classification": "Scoring Leaders", 
+        "points":"33,643"        
+    },
+    {
+        "name":"Michael Jordan", 
+        "team":"Washington Wizards",
+        "classification": "Scoring Leaders", 
+        "points":"32,292"        
+    },
+    {
+        "name":"Dirk Nowitzki", 
+        "team":"Dallas Mavericks",
+        "classification": "Scoring Leaders", 
+        "points":"31,560"        
+    },
+    {
+        "name":"Wilt Chamberlain", 
+        "team":"Lakers",
+        "classification": "Scoring Leaders", 
+        "points":"31,419"        
+    },
+    {
+        "name":"Shaquille O'Neal", 
+        "team":"Boston Celtics",
+        "classification": "Scoring Leaders", 
+        "points":"28,596"        
+    },
+    {
+        "name":"Moses Malone", 
+        "team":"Spurs",
+        "classification": "Scoring Leaders", 
+        "points":"27,409"        
+    },
+    {
+        "name":"Elvin Hayes", 
+        "team":"Bullets",
+        "classification": "Scoring Leaders", 
+        "points":"27,313"        
+    }
+]

@@ -74,6 +74,10 @@ const routes: Routes = [
   {
     path: 'reorder',
     loadChildren: () => import('./proyecto/reorder/reorder.module').then( m => m.ReorderPageModule)
+  },
+  {
+    path: 'serch',
+    loadChildren: () => import('./proyecto/serch/serch.module').then( m => m.SerchPageModule)
   }
 ];
 

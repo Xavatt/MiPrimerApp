@@ -21,5 +21,11 @@ export class DataService {
       return this.http.get<ListaComponentes[]>('/assets/data/menu.json');
   }
 
+  getComments()
+  {
+      return this.http.get<any[]>('https://jsonplaceholder.typicode.com/comments');
+  }
+
+
 
 }

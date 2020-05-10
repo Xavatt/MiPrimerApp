@@ -8,6 +8,7 @@ import { SerchPageRoutingModule } from './serch-routing.module';
 
 import { SerchPage } from './serch.page';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
+import { PipesModule } from 'src/app/pipes/pipes.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ComponentesModule } from 'src/app/componentes/componentes.module';
     FormsModule,
     IonicModule,
     SerchPageRoutingModule,
-    ComponentesModule
+    ComponentesModule,
+    PipesModule
   ],
   declarations: [SerchPage]
 })

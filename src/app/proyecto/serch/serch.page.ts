@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-serch',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SerchPage implements OnInit {
 
-  constructor() { }
+  Comment: any[] = [];
+  textoBuscar = '';
 
-  ngOnInit() {
+  constructor( private dataService: DataService ) { }
+
+  ngOnInit( ) {
+
+    this.dataService.getComments()
+    .subscribe(Comment => {
+    console.log(Comment);
+    this.Comment = Comment;
+    })
+
   }
 
+
+  buscar(event)
+  {
+    //console.log(event);
+    this.textoBuscar = event.detail.value;
+  }
 }

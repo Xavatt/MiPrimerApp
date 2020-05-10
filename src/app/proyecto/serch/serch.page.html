@@ -1,5 +1,23 @@
-<app-encabezado titulo="serch page"></app-encabezado>
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref ="/"> </ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Serch</ion-title>
+  </ion-toolbar>
+
+  <ion-searchbar  animated
+                  (ionChange) = "buscar($event)"></ion-searchbar>
+</ion-header>
 
 <ion-content>
+
+  <ion-list>
+    <ion-item *ngFor = "let serch of Comment | filtro: textoBuscar: 'name'">
+      <ion-label> {{serch.name}} </ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
